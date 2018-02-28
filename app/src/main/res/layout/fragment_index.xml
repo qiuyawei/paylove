@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/main_color"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:src="@drawable/fab_logo" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_seach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/bg_color">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/shape_editext_bg"
+        android:gravity="center_vertical"
+       android:layout_margin="@dimen/dp5"
+        >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="搜索"
+               android:drawableLeft="@drawable/btn03"
+               android:layout_centerInParent="true"
+               android:drawablePadding="@dimen/dp10"/>
+    </RelativeLayout>
+    </LinearLayout>
+    <com.ipd.paylove.view.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+        <com.ipd.paylove.view.PullableListView
+            android:id="@+id/rfList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:divider="@color/white"
+            android:listSelector="@color/transparent"
+            android:dividerHeight="@dimen/dp10"
+            />
+
+        <include layout="@layout/load_more" />
+    </com.ipd.paylove.view.PullToRefreshLayout>
+</LinearLayout>

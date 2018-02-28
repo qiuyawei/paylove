@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color">
+
+    <include layout="@layout/title_act_layout" />
+    <EditText
+        android:id="@+id/et_reallName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height50_line_common"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp10"
+        android:textColorHint="@color/hintColor"
+        android:textSize="@dimen/sizeText14"
+        />
+
+
+</LinearLayout>

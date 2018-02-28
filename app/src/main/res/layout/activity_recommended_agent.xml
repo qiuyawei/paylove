@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/title_act_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <CheckBox
+                style="@style/item_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="付爱宝"
+                android:paddingLeft="6dp"/>
+
+            <CheckBox
+                style="@style/item_checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="全国总代理"
+                android:paddingLeft="6dp"
+                />
+
+            <CheckBox
+                style="@style/item_checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="一级代理"
+                android:paddingLeft="6dp"
+                />
+
+            <CheckBox
+                style="@style/item_checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="二级管理"
+                android:paddingLeft="6dp"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <CheckBox
+                style="@style/item_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="纤之果"
+                android:paddingLeft="6dp"/>
+
+            <CheckBox
+                style="@style/item_checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="全国总代理"
+                android:paddingLeft="6dp"
+                />
+
+            <CheckBox
+                style="@style/item_checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="一级代理"
+                android:paddingLeft="6dp"
+                />
+
+            <CheckBox
+                style="@style/item_checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="二级代理"
+                android:paddingLeft="6dp"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bt_sure"
+        android:layout_margin="20dp"
+        android:text="生成注册码"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*请将注册码发给您推荐的子代理"
+        android:textColor="@color/red"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-20dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_regCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="123asdf41113233333"
+        android:textColor="@color/green"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+       />
+
+
+    <Button
+        android:id="@+id/bt_copy"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/main_button"
+        android:layout_margin="20dp"
+        android:text="点击复制"
+        android:textColor="@color/white"/>
+</LinearLayout>

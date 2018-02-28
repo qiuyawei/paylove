@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_act_layout" />
+
+    <RelativeLayout style="@style/RelativeLayout_Common">
+
+        <TextView
+            style="@style/RelativeLayout_Common_LeftText"
+            android:text="联系人" />
+
+        <EditText
+            android:id="@+id/et_contact"
+            style="@style/Editext_Common"
+            android:layout_marginLeft="90dp"
+            android:hint="请输入联系人姓名" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout style="@style/RelativeLayout_Common"
+        android:layout_marginTop="@dimen/dividerHeight">
+
+        <TextView
+            style="@style/RelativeLayout_Common_LeftText"
+            android:text="手机号" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/Editext_Common"
+            android:layout_marginLeft="90dp"
+            android:hint="手机号码" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_selectssq"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:hint="请选择省份"
+        android:paddingLeft="10dp"
+        android:textSize="@dimen/sizeText14"
+        android:layout_marginTop="@dimen/dividerHeight"
+        android:drawableRight="@mipmap/arrow_right"
+        android:paddingRight="@dimen/dp10"
+        />
+
+    <RelativeLayout style="@style/RelativeLayout_Common"
+        android:layout_marginTop="@dimen/dividerHeight">
+
+        <TextView
+            style="@style/RelativeLayout_Common_LeftText"
+            android:text="详细地址" />
+
+        <EditText
+            android:id="@+id/et_detailaddress"
+            style="@style/Editext_Common"
+            android:layout_marginLeft="90dp"
+            android:hint="请输入详细地址" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dividerHeight"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="设为默认地址" />
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            style="@style/my_toogle_button"
+            android:checked="true"
+            />
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/bt_save"
+        style="@style/submit"
+        android:text="保存"
+        android:layout_marginBottom="20dp"
+        />
+
+</LinearLayout>

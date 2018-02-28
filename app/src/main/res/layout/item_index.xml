@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividerHeight"
+        android:background="@color/shadow" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+
+            android:id="@+id/iv_indexPhoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dividerHeight"
+            android:src="@drawable/erropic" />
+
+        <TextView
+            android:id="@+id/tv_indexName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_toRightOf="@+id/iv_indexPhoto"
+            android:text="商品名字"
+            android:textColor="@color/black"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_indexPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_toRightOf="@+id/iv_indexPhoto"
+            android:text="3.5元/箱"
+            android:textColor="@color/red"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/et_indexNumber"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp5"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_toRightOf="@+id/iv_indexPhoto"
+            android:background="#f2f2f2"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="1"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/bt_indexAddcar"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@drawable/shape_btn_add_shop"
+            android:text="加入购物车"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sizeText14" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividerHeight"
+        android:background="@color/shadow" />
+</LinearLayout>

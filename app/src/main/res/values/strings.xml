@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">付爱宝</string>
+    <string name="action_settings">Settings</string>
+    <string name="tip">小贴士:\n谢谢您对付爱宝的关注/你如果您有任何问题或意见请通过一下方式和我们联系。
+    \n客服电话服务时间为 早上9:00 -晚上 21:00\n客服热线:4001800058</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_person_infor">PersonInfor</string>
+    <string name="title_activity_set">Set</string>
+    <string name="title_activity_about_us">AboutUs</string>
+    <string name="title_activity_detail_infor">DetailInfor</string>
+    <string name="title_activity_recommended_agent">RecommendedAgent</string>
+    <string name="title_activity_all_order">AllOrder</string>
+    <string name="title_activity_reset_name">ResetName</string>
+    <string name="title_activity_reset_password">ResetPassword</string>
+    <string name="title_activity_address">Address</string>
+    <string name="title_activity_product_detail">ProductDetail</string>
+    <string name="browse_title"><![CDATA[Videos by Your Company]]></string>
+    <string name="related_movies">Related Videos</string>
+    <string name="vertical_grid_title"><![CDATA[Vertical Video Grid]]></string>
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="init_text">00:00</string>
+    <string name="play_pause_description">Play Pause Button</string>
+    <string name="loading">正在加载...</string>
+    <string name="no_video_found">No video was found</string>
+    <string name="about_app">About DemoCast Player</string>
+    <string name="version">Version: %1$s</string>
+    <string name="popular_header">Popular Videos</string>
+    <string name="preferences">PREFERENCES</string>
+    <string name="grid_view">Grid View</string>
+    <string name="error_fragment">Error Fragment</string>
+    <string name="personal_settings">Personal Settings</string>
+    <string name="watch_trailer_1">Watch trailer</string>
+    <string name="watch_trailer_2">FREE</string>
+    <string name="rent_1">Rent By Day</string>
+    <string name="rent_2">From $1.99</string>
+    <string name="buy_1">Buy and Own</string>
+    <string name="buy_2">AT $9.99</string>
+    <string name="movie">Movie</string>
+    <string name="should_start">shouldStart</string>
+    <string name="start_position">startPosition</string>
+    <string name="search_results">Search Results</string>
+
+    <!-- Error messages -->
+    <string name="video_error_media_load_timeout">Media loading timed out</string>
+    <string name="video_error_server_inaccessible">Media server was not reachable</string>
+    <string name="video_error_unknown_error">Failed to load video</string>
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <string name="oops">Oops</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_sure_order">SureOrder</string>
+    <string name="title_activity_test">Test</string>
+
+
+    <!--上啦加载和下拉刷新-->
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+</resources>

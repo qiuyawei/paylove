@@ -1,0 +1,128 @@
+<resources>
+   <!-- <style name="myThem" parent="AppBaseTheme">
+
+        &lt;!&ndash; All customizations that are NOT specific to a particular API-level can go here. &ndash;&gt;
+        <item name="android:background">@drawable/weclom</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>-->
+
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light" />
+    <!-- 自定义checkbox -->
+    <style name="item_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/my_checkbox</item>
+
+    </style>
+    <!-- 自定义checkbox2 -->
+    <style name="item_checkbox2" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/my_checkbox2</item>
+
+    </style>
+
+
+
+    <style name="radioBtnStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/selector_text_home</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+
+    <style name="submit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/shape_btn_sliod</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">10dp</item>
+
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--全局请求转圈样式-->
+    <style name="HKDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="RelativeLayout_Common">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height50_line_common</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingLeft">@dimen/dp10</item>
+        <item name="android:paddingRight">@dimen/dp10</item>
+
+    </style>
+
+    <style name="RelativeLayout_Common_LeftText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="RelativeLayout_Common_RightText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:layout_marginRight">@dimen/dp10</item>
+        <item name="android:paddingRight">@dimen/dp10</item>
+    </style>
+    <style name="arrowRight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@mipmap/arrow_right</item>
+        <item name="android:layout_marginRight">@dimen/dp10</item>
+    </style>
+
+    <style name="Editext_Common">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height50_line_common</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:paddingLeft">@dimen/dp10</item>
+        <item name="android:textSize">@dimen/sizeText14</item>
+    </style>
+
+    <style name="view_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dividerHeight</item>
+        <item name="android:background">@color/gray3</item>
+    </style>
+    <style name="my_toogle_button">
+        <item name="android:button">@drawable/selector_my_tooglebutton</item>
+    </style>
+</resources>

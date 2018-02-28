@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/mycontiner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="49dp"
+        android:background="@color/gray" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="3dp">
+
+
+        <RadioButton
+            android:id="@+id/btn_total01"
+            style="@style/radioBtnStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/select_index"
+            android:text="首页"
+            android:textColor="@color/main_color" />
+
+        <RadioButton
+            android:id="@+id/btn_total02"
+            style="@style/radioBtnStyle"
+            android:drawableTop="@drawable/select_jhd"
+            android:text="进货单"
+            android:textColor="@color/main_color" />
+
+        <RadioButton
+            android:id="@+id/btn_total03"
+            style="@style/radioBtnStyle"
+            android:drawableTop="@drawable/select_grzx"
+            android:text="个人中心"
+            android:textColor="@color/main_color" />
+    </RadioGroup>
+
+
+</RelativeLayout>

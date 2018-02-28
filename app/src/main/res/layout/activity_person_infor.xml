@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_act_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <View
+                style="@style/view_divider"
+                android:layout_marginTop="@dimen/dp10"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_photo"
+                style="@style/RelativeLayout_Common">
+
+                <TextView
+                    android:id="@+id/tv_photo"
+                    style="@style/RelativeLayout_Common_LeftText"
+                    android:text="头像" />
+
+                <ImageView
+                    android:id="@+id/iv_photo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/user_photo" />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/view_divider"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_loginName"
+                style="@style/RelativeLayout_Common"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    style="@style/RelativeLayout_Common_LeftText"
+                    android:text="用户名" />
+
+                <TextView
+                    android:id="@+id/tv_nickName"
+                    style="@style/RelativeLayout_Common_RightText"
+                    android:text="小麻雀"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/view_divider"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_sex"
+                style="@style/RelativeLayout_Common">
+
+
+                <TextView
+                    style="@style/RelativeLayout_Common_LeftText"
+                    android:text="性别" />
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    style="@style/RelativeLayout_Common_RightText"
+                    android:text="man" />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/view_divider"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_reallName"
+                style="@style/RelativeLayout_Common">
+
+
+                <TextView
+                    style="@style/RelativeLayout_Common_LeftText"
+                    android:text="真实姓名" />
+
+                <TextView
+                    android:id="@+id/tv_realName"
+                    style="@style/RelativeLayout_Common_RightText"
+                    android:text="李寻欢" />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/view_divider"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_creatTiem"
+                style="@style/RelativeLayout_Common"
+                android:layout_width="match_parent">
+
+                <TextView
+                    style="@style/RelativeLayout_Common_LeftText"
+                    android:text="注册时间" />
+
+                <TextView
+                    android:id="@+id/tv_regTiem"
+                    style="@style/RelativeLayout_Common_RightText"
+                    android:text="2016-5-8"
+                    android:layout_marginRight="@dimen/dp10"/>
+
+
+            </RelativeLayout>
+
+
+
+            <View
+                style="@style/view_divider"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10" />
+
+            <RelativeLayout style="@style/RelativeLayout_Common">
+
+
+                <TextView
+                    style="@style/RelativeLayout_Common_LeftText"
+                    android:text="推荐代理商" />
+
+                <TextView
+                    android:id="@+id/tv_agent"
+                    style="@style/RelativeLayout_Common_RightText"
+                    android:text="猪八戒"
+                    android:layout_marginRight="@dimen/dp10"/>
+
+            </RelativeLayout>
+
+
+            <View
+                style="@style/view_divider"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10" />
+
+            <RelativeLayout style="@style/RelativeLayout_Common">
+
+
+                <TextView
+                    style="@style/RelativeLayout_Common_LeftText"
+                    android:text="团队" />
+
+                <TextView
+                    android:id="@+id/tv_group"
+                    style="@style/RelativeLayout_Common_RightText"
+                    android:text="sky战队"
+                    android:layout_marginRight="@dimen/dp10"/>
+
+            </RelativeLayout>
+            <View
+                style="@style/view_divider"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_resetPassword"
+                style="@style/RelativeLayout_Common">
+
+
+                <TextView
+                    style="@style/RelativeLayout_Common_LeftText"
+
+                    android:text="修改密码" />
+
+
+                <ImageView style="@style/arrowRight" />
+            </RelativeLayout>
+            <View style="@style/view_divider" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

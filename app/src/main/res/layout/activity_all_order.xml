@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/title_act_layout" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:scrollbars="none">
+
+        <com.ipd.paylove.view.ScrollBangbangGouMenu
+            android:id="@+id/sbg"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+        </com.ipd.paylove.view.ScrollBangbangGouMenu>
+    </HorizontalScrollView>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray" />
+
+
+    <com.ipd.paylove.view.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+        <com.ipd.paylove.view.PullableListView
+            android:id="@+id/rfList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:divider="@color/gray3"
+            android:listSelector="@color/transparent"
+            android:dividerHeight="@dimen/dividerHeight"
+            />
+
+        <include layout="@layout/load_more" />
+    </com.ipd.paylove.view.PullToRefreshLayout>
+
+</LinearLayout>

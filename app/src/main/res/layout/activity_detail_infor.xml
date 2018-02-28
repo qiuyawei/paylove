@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_act_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/rl_banlance"
+                style="@style/RelativeLayout_Common"
+                >
+
+                <TextView
+                    style="@style/RelativeLayout_Common_LeftText"
+                    android:text="余额"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_banlacne"
+                    style="@style/RelativeLayout_Common_RightText"
+                    android:text="0"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_phone"
+                style="@style/RelativeLayout_Common"
+               >
+
+                <TextView
+                    style="@style/RelativeLayout_Common_LeftText"
+                    android:text="联系手机"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    style="@style/RelativeLayout_Common_RightText"
+                    android:text="1851634770"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_ID"
+                style="@style/RelativeLayout_Common"
+                >
+
+            <TextView
+                style="@style/RelativeLayout_Common_LeftText"
+                android:text="身份证号"
+                />
+
+            <TextView
+                android:id="@+id/tv_ID"
+                style="@style/RelativeLayout_Common_RightText"
+                android:text=""/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_birthdy"
+                style="@style/RelativeLayout_Common"
+                >
+
+                <TextView
+                    style="@style/RelativeLayout_Common_LeftText"
+                    android:text="生日"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_birthdy"
+                    style="@style/RelativeLayout_Common_RightText"
+                    android:text=""/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_email"
+                style="@style/RelativeLayout_Common"
+                >
+
+                <TextView
+                    style="@style/RelativeLayout_Common_LeftText"
+                    android:text="Email"
+                   />
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    style="@style/RelativeLayout_Common_RightText"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_code"
+                style="@style/RelativeLayout_Common"
+                >
+
+                <TextView
+                    style="@style/RelativeLayout_Common_LeftText"
+                    android:text="邮政编码"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_code"
+                    style="@style/RelativeLayout_Common_RightText"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_bank"
+                style="@style/RelativeLayout_Common"
+                >
+
+                <TextView
+                    style="@style/RelativeLayout_Common_LeftText"
+
+                    android:text="收款银行"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_bank"
+                    style="@style/RelativeLayout_Common_RightText"
+                    />
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_bankcount"
+                style="@style/RelativeLayout_Common"
+                >
+
+                <TextView
+                    style="@style/RelativeLayout_Common_LeftText"
+
+                    android:text="银行帐号"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_bankcount"
+                    style="@style/RelativeLayout_Common_RightText"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_khr"
+                style="@style/RelativeLayout_Common"
+                >
+
+                <TextView
+                    style="@style/RelativeLayout_Common_LeftText"
+
+                    android:text="开户人"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_khr"
+                    style="@style/RelativeLayout_Common_RightText"/>
+
+
+            </RelativeLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_khhaddress"
+                style="@style/RelativeLayout_Common"
+                >
+
+                <TextView
+                    style="@style/RelativeLayout_Common_LeftText"
+
+                    android:text="开户行地址"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_khhaddress"
+                    style="@style/RelativeLayout_Common_RightText"/>
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_address"
+                style="@style/RelativeLayout_Common"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    style="@style/RelativeLayout_Common_LeftText"
+
+                    android:text="收货地址"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    style="@style/RelativeLayout_Common_RightText"/>
+
+                <ImageView
+                    style="@style/arrowRight" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gray" />
+            <RelativeLayout
+                android:id="@+id/rl_ssq"
+                style="@style/RelativeLayout_Common"
+                android:visibility="visible"
+                >
+
+                <TextView
+                    style="@style/RelativeLayout_Common_LeftText"
+
+                    android:text="省市区"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_ssq"
+                    style="@style/RelativeLayout_Common_RightText"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gray" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="身份证照片" />
+
+
+                <ImageView
+                    android:id="@+id/ivPhoto"
+                    android:layout_width="74dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/fb_03" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/gray" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
